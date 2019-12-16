@@ -40,9 +40,13 @@ def makeTitle():
 	word = genNext('_start_')
 	title = word
 	word = genNext(word)
+	compteur=1
 	while word != '_end_':
 		title += ' ' + word
 		word = genNext(word)
+		compteur+=1;
+	if compteur<3:
+		return makeTitle()
 	return title
 
 for i in range(args.nb):

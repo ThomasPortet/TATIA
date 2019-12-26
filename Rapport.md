@@ -1,6 +1,6 @@
-# Description des taches
+# Description des tâches
 
-Pour ce projet, le but était de générer des titres d'articles sur internet dits "clickbait". Nous avons réalisé les taches suivantes :
+Pour ce projet, le but était de générer des titres d'articles sur internet dits "clickbait". Nous avons réalisé les tâches suivantes :
 
 * Nettoyer le data set pour être plus utilisable
 * Extraire les fréquences des bigrammes des titres
@@ -15,7 +15,7 @@ L'algorithme se base sur les fréquences de bigrammes pour générer les titres.
 
 On mesure la fréquence de chaque bigramme de chaque titre du data set, en ajoutant des mots spéciaux pour signifier le début et la fin d'un titre.
 
-On commence par le mot spécial de début, puis on prends un bigramme aléatoire commençant par ce mot dans tous les bigrammes trouvés, avec les bigrammes plus fréquent ayant une plus grande chance d'être choisis. On répète ce processus en utilisant le mot que l'on vient de rajouter au lieu du mot de départ.
+On commence par le mot spécial de début, puis on prend un bigramme aléatoire commençant par ce mot dans tous les bigrammes trouvés, avec les bigrammes plus fréquents ayant une plus grande chance d'être choisis. On répète ce processus en utilisant le mot que l'on vient de rajouter au lieu du mot de départ.
 
 Lorsque le mot spécial de fin de titre est choisi, on arrête la génération. Pour éviter les titres trop courts, on repart du début si un titre fini avec moins de 3 mots.
 

@@ -4,6 +4,8 @@ Groupe :
 * Thomas Portet
 * Aymeric Picard Marchetto
 
+Le rapport se trouve dans le fichier `Rapport.md`.
+
 # Utilisation
 
 ```python main.py data/data.txt [nb]```

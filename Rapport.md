@@ -38,8 +38,8 @@ Il s'agit d'une compilation de titres du site The Examiner, qui contient 3.09 mi
 
 # Résultats obtenus (évaluation)
 
-Les résultats sont parfois excellents, parfois un peu moins excellent, mais toujours divertissant.
-Voici 10 phrases générées
+Les résultats sont de qualité variable mais sont souvent drôles. Voici 10 phrases générées :
+
 ```
 The Pacific Standard will make first excerpt of Georgia Tech basketball substate opener to benefit from Aerospace Scholar Program
 150 animals removed from show Belmont
@@ -52,9 +52,8 @@ Sons of it s Rosie O P crowned
 Cheryl Cole Konrad to appear along The Rock N Paws and star Charice talks The Hardest person stories
 Basketball Wives fights
 ```
-# Analyse des erreurs
 
-Il y en a, c'est avéré.
+Les titres sont de longueur très variable et de cohérence très variable. Mais tout de même certains pourraient être des titres de vrais articles, comme on peut le constater avec certaines des phrases ci-dessus.
 
 # Commentaires sur les améliorations possibles
 

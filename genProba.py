@@ -7,6 +7,7 @@
 
 import argparse
 import nltk
+from nltk.tokenize import RegexpTokenizer
 
 parser = argparse.ArgumentParser(description='Parse and preprocess data for the program.')
 parser.add_argument('input', help='input file')
@@ -16,6 +17,8 @@ args = parser.parse_args()
 
 startwords = {}
 middlewords = {}
+
+tokenizer = RegexpTokenizer(r'\w+')
 
 def addStart(wd):
 	startwords[wd] = startwords.get(wd, 0) + 1
@@ -32,9 +35,11 @@ def addEnd(wd):
 with open(args.input, "r") as file:
 	for l in file:
 		l = l.rstrip()
-		if not l:
+		if l.isspace():
 			continue
-		words = nltk.word_tokenize(l)
+		words = tokenizer.tokenize(l)
+		if not words:
+			continue
 		addStart(words[0])
 		addEnd(words[-1])
 		bigrams = nltk.bigrams(words)

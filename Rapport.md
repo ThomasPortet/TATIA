@@ -4,7 +4,7 @@ Pour ce projet, le but était de générer des titres d'articles sur internet di
 
 * Nettoyer le data set pour être plus utilisable
 * Extraire les fréquences des bigrammes des titres
-* Stocker ses fréquences dans un format spécial pour ne pas avoir à recalculer
+* Stocker ses fréquences dans un format spécial pour ne pas avoir à les recalculer
 * Utiliser les fréquences pour générer des titres
 
 # Détails de la conception et implémentation de l'algorithme/système
@@ -21,7 +21,7 @@ Lorsque le mot spécial de fin de titre est choisi, on arrête la génération. 
 
 ## Stockage des fréquences
 
-Pour ne pas à recalculer les fréquences à chaque fois, elles sont calculées dans un autre programme qui stocke les résultats dans un fichier.
+Pour ne pas avoir à recalculer les fréquences à chaque fois, elles sont calculées dans un autre programme qui stocke les résultats dans un fichier.
 
 Le format de ce fichier est le suivant:
 

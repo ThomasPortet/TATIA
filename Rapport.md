@@ -39,7 +39,19 @@ Il s'agit d'une compilation de titres du site The Examiner, qui contient 3.09 mi
 # Résultats obtenus (évaluation)
 
 Les résultats sont parfois excellents, parfois un peu moins excellent, mais toujours divertissant.
-
+Voici 10 phrases générées
+```
+Paris on Exercise equipment and returned to knit toys contain twists and is known museum visit patients
+Apothederm SmartPeptide techology from all state of urgent medical emergency management
+Cheetah Hunt for motocross
+Bonded cats and Lofts at the Old Boys of September 1
+UFC 126 A Supreme Court on U S Senate prefers Xbox 720 game s Day
+Major league hit one
+Recent dating Is RB Chris Gethard turns to Chris Brown party at TNA No Tofu with new Celebrity s on Celebrity Inspired People settle in the demise of abandoned at Lake Bruins
+J Reed appeals to Rangers acquire Tumblr
+Macy s economy bringing Star Cricket Live Action Well sung White House is oil shampoo
+Apps Respond on American Revolution
+```
 # Analyse des erreurs
 
 Il y en a, c'est avéré.

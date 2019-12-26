@@ -9,9 +9,26 @@ Pour ce projet, le but était de générer des titres d'articles sur internet di
 
 # Détails de la conception et implémentation de l'algorithme/système
 
-Nous avons utilisé l'algorithme des bigrammes pour générer les couples de mots les plus probables de se suivre.
+## Génération de titres
 
-On a introduit un début de phrase et un fin de phrase pour que les phrases générées commencent et terminent avec des mots qui ont de forte probabilité d'être en début ou fin de phrase.
+L'algorithme se base sur les fréquences de bigrammes pour générer les titres.
+
+On mesure la fréquence de chaque bigramme de chaque titre du data set, en ajoutant des mots spéciaux pour signifier le début et la fin d'un titre.
+
+On commence par le mot spécial de début, puis on prends un bigramme aléatoire commençant par ce mot dans tous les bigrammes trouvés, avec les bigrammes plus fréquent ayant une plus grande chance d'être choisis. On répète ce processus en utilisant le mot que l'on vient de rajouter au lieu du mot de départ.
+
+Lorsque le mot spécial de fin de titre est choisi, on arrête la génération. Pour éviter les titres trop courts, on repart du début si un titre fini avec moins de 3 mots.
+
+## Stockage des fréquences
+
+Pour ne pas à recalculer les fréquences à chaque fois, elles sont calculées dans un autre programme qui stocke les résultats dans un fichier.
+
+Le format de ce fichier est le suivant:
+
+* Chaque "bloc" commence par un mot suivi du nombre de bigrammes qui commencent par ce mot, noté N
+* Les N lignes qui suivent sont alors le mot finissant le bigramme et son nombre d'apparaitions dans le data set (soit sa fréquence)
+
+Le mot spécial de début de titre est `_start_` et celui de fin est `_end_`.
 
 # Jeux de données utilisés lors de l’expérimentation
 
